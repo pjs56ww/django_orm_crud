@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}New{% endblock  %}
+
+{% block content %}
+  <a href="/articles/index/">[뒤로가기]</a>
+  <h1>게시글 작성</h1>
+  <form action="/articles/create/">
+    <label for="title">TITLE:</label>
+    <br>
+    <input id="title" type="text" name="title">
+    <br>
+    <label for="content">CONTENT:</label>
+    <br>
+    <textarea id="content" name="content"></textarea>
+    <br>
+    <br>
+    <button type="submit">작성하기</button>
+    <br>
+  </form>
+{% endblock  %}
